@@ -3,7 +3,7 @@
 # I'M PANICKING!!!! PLEASE FIX THESE ISSUES! I DON'T KNOW WHY IT'S DOING THIS????!!!!
 - Character isn't moving correctly
 - I only seem to be able to find robins for some reason
-- I can seeing go into negative money
+- I can seemingly go into negative money
 - I didn't have time to implement the bird house at all
 - I've received feedback that it's too difficult to find the bird watching locations!
 - Also I don't know if any of the values are values are properly set anymore! More testing needs to be done to make sure all values line up with the tables below.
