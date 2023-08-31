@@ -30,7 +30,8 @@ You are a birdwatcher and you have a camera. You can sell photos of birds that y
 - Price
 - Appearance Probability
 - Description
-- Flora Cover
+
+### Flora Cover
 - Birds it can contain
 - Bird Contained
 
