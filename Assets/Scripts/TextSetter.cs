@@ -23,7 +23,7 @@ public class TextSetter : MonoBehaviour
         } 
         else if (idx == 2)
         {
-            gameObject.GetComponent<Text>().text = "Level: " + this.info.stealth_lvl;
+            gameObject.GetComponent<Text>().text = "Level: 0";
         }
         else if (idx == 3)
         {

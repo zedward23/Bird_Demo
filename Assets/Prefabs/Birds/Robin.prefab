@@ -99,5 +99,5 @@ MonoBehaviour:
   bird_type: Robin
   cam_req: 1
   stealth_req: 1
-  price: 10
+  price: -10
   appearance_prob: 15

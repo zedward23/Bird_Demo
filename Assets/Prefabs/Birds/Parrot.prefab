@@ -99,5 +99,5 @@ MonoBehaviour:
   bird_type: Parrot
   cam_req: 1
   stealth_req: 2
-  price: 50
+  price: -2
   appearance_prob: 6

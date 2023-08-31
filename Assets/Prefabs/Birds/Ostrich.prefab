@@ -97,7 +97,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bird_type: Ostrich
-  cam_req: 3
+  cam_req: 1
   stealth_req: 2
   price: 300
   appearance_prob: 5
