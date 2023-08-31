@@ -50,17 +50,27 @@ public class Cover : MonoBehaviour
         return null;
     }
 
-    void captureSuccess(Bird b, PlayerInfo p)
+    void captureSuccess(Bird b)
     {
-        print("ran in capture success");
+        PlayerInfo p = GameObject.FindGameObjectWithTag("Player").GetComponent<PlayerInfo>();
+
         if (b.cam_req > p.cam_lvl) 
         {
             p.balance = (int)((float)(p.balance) * 0.90f);
+            var go = GameObject.FindGameObjectWithTag("Notice");
+            go.GetComponent<NoticeScreen>().open("You were attacked by a " + b.bird_type);
         }
-        if (b.cam_req <= p.cam_lvl && b.stealth_req <= p.stealth_lvl)
+        else if (b.stealth_req > p.stealth_lvl)
+        {
+            var go = GameObject.FindGameObjectWithTag("Notice");
+            go.GetComponent<NoticeScreen>().open("You spotted a " + b.bird_type + " but it flew away!");
+        }
+        else 
         {
             p.balance += b.price;
-            print("You took a picture of " + b.bird_type);
+            var go = GameObject.FindGameObjectWithTag("Notice");
+            go.GetComponent<NoticeScreen>().open("You took a picture of " + b.bird_type);
+
         }
     }
     
@@ -72,7 +82,7 @@ public class Cover : MonoBehaviour
 
             if (birdFound != null)
             {
-                captureSuccess(birdFound, collision.gameObject.GetComponent<PlayerInfo>());
+                captureSuccess(birdFound);
             }
         }
         
