@@ -14,13 +14,13 @@ You are a birdwatcher and you have a camera. You can sell photos of birds that y
 - Level 1: Fixed Lens
 - Level 2: 2x Zoom
 - Level 3: 4x Zoom
-- The more dangerous the bird, the further you need to take the picture from; if you try to take a picture underprepared, you get hurt and lose 10% of your current money.
+*The more dangerous the bird, the further you need to take the picture from; if you try to take a picture underprepared, you get hurt and lose 10% of your current money.*
 
 ### Gear
 - Level 1: Standard Clothes
 - Level 2: Camo Shirt
 - Level 3: Ghillie Suit
-- The more skittish the bird, the stealthier you need to be.
+*The more skittish the bird, the stealthier you need to be.*
 
 ### Bird
 - Name
