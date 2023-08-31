@@ -1,5 +1,13 @@
 # Bird_Demo
 
+# I'M PANICKING!!!! PLEASE FIX THESE ISSUES! I DON'T KNOW WHY IT'S DOING THIS????!!!!
+- Character isn't moving correctly
+- I only seem to be able to find robins for some reason
+- I can seeing go into negative money
+- I didn't have time to implement the bird house at all
+- I've received feedback that it's too difficult to find the bird watching locations!
+- Also I don't know if any of the values are values are properly set anymore! More testing needs to be done to make sure all values line up with the tables below.
+
 ## Premise: 
 You are a birdwatcher and you have a camera. You can sell photos of birds that you find to make more money to buy upgrades for your camera, as well as better gear for finding rarer and more beautiful birds. Pictures of rarer and more beautiful birds and their feathers sell for more money.
 
