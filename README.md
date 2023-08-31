@@ -1,6 +1,53 @@
 # Bird_Demo
 
-##Bird Info
+## Premise: 
+You are a birdwatcher and you have a camera. You can sell photos of birds that you find to make more money to buy upgrades for your camera, as well as better gear for finding rarer and more beautiful birds. Pictures of rarer and more beautiful birds and their feathers sell for more money.
+
+## Main Classes
+
+### Player
+- Wallet
+- Camera
+- Gear
+
+### Camera
+- Level 1: Fixed Lens
+- Level 2: 2x Zoom
+- Level 3: 4x Zoom
+- The more dangerous the bird, the further you need to take the picture from; if you try to take a picture underprepared, you get hurt and lose 10% of your current money.
+
+### Gear
+- Level 1: Standard Clothes
+- Level 2: Camo Shirt
+- Level 3: Ghillie Suit
+- The more skittish the bird, the stealthier you need to be.
+
+### Bird
+- Name
+- Capture Requirements
+- Price
+- Appearance Probability
+- Description
+- Flora Cover
+- Birds it can contain
+- Bird Contained
+
+## Camera
+| Level       | Description                                    |
+|-------------|------------------------------------------------|
+| 1           | Fixed Lens                                     |
+| 2           | 2x Zoom                                        |
+| 3           | 4x Zoom                                        |
+
+## Gear
+| Level       | Description                                    |
+|-------------|------------------------------------------------|
+| 1           | Standard Clothes                              |
+| 2           | Camo Shirt                                    |
+| 3           | Ghillie Suit                                   |
+
+
+## Bird Info
 | Name         | Camera Requirement | Stealth Requirement | Price    | Appearance Prob Weight |
 |--------------|--------------------|---------------------|----------|------------------------|
 | Robin        | 1                  | 1                   | $10      | 15                     |
@@ -12,7 +59,7 @@
 
 *Probability of Appearance of Bird A = Appearance Probability Weight of Bird A / Sum of all appearance probability weights of the birds that can appear in this specific flora cover*
 
-##Cover Info
+## Cover Info
 | Name          | Birds it may contain                  |
 |---------------|---------------------------------------|
 | Shrub         | Robin, Parrot, Falcon                 |
@@ -20,7 +67,7 @@
 | Grassy Field  | Ostrich, Cassowary                    |
 | Bird House    | Robin                                 |
 
-##Upgrade Info
+## Upgrade Info
 | Name          | Price   |
 |---------------|---------|
 | Camera 2x zoom| $100    |
