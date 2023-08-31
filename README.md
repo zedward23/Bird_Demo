@@ -1,5 +1,5 @@
 # Bird_Demo
-
+|Bird Info|
 | Name         | Camera Requirement | Stealth Requirement | Price    | Appearance Prob Weight |
 |--------------|--------------------|---------------------|----------|------------------------|
 | Robin        | 1                  | 1                   | $10      | 15                     |
