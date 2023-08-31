@@ -43,7 +43,6 @@ public class Cover : MonoBehaviour
         {
             if (roll >= prob_ranges[i - 1] && roll <= prob_ranges[i])
             {
-                print(roll + " rolled a " + birdsContained[i - 1].GetComponent<Bird>().name);
                 return birdsContained[i - 1].GetComponent<Bird>();
             }
         }
@@ -82,7 +81,7 @@ public class Cover : MonoBehaviour
 
             if (birdFound != null)
             {
-                captureSuccess(birdFound);
+                captureSuccess(birdsContained[0].GetComponent<Bird>());
             }
         }
         
