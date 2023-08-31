@@ -35,23 +35,45 @@ public class Cover : MonoBehaviour
         
     }
 
+    Bird checkBird()
+    {
+        float roll = Random.Range(0.0f, this.prob_sum);
+
+        for (int i = 1; i < prob_ranges.Length; i++)
+        {
+            if (roll >= prob_ranges[i - 1] && roll <= prob_ranges[i])
+            {
+                print(roll + " rolled a " + birdsContained[i - 1].GetComponent<Bird>().name);
+                return birdsContained[i - 1].GetComponent<Bird>();
+            }
+        }
+        return null;
+    }
+
+    void captureSuccess(Bird b, PlayerInfo p)
+    {
+        print("ran in capture success");
+        if (b.cam_req > p.cam_lvl) 
+        {
+            p.balance = (int)((float)(p.balance) * 0.90f);
+        }
+        if (b.cam_req <= p.cam_lvl && b.stealth_req <= p.stealth_lvl)
+        {
+            p.balance += b.price;
+            print("You took a picture of " + b.bird_type);
+        }
+    }
+    
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.CompareTag("Player"))
         {
-            
-            float roll = Random.Range(0.0f, this.prob_sum);
+            Bird birdFound = checkBird();
 
-            for (int i = 1; i < prob_ranges.Length; i++)
+            if (birdFound != null)
             {
-                if (roll >= prob_ranges[i-1] && roll <= prob_ranges[i])
-                {
-                    print(roll + " rolled a " + birdsContained[i-1].GetComponent<Bird>().name);
-                    break;
-                }
+                captureSuccess(birdFound, collision.gameObject.GetComponent<PlayerInfo>());
             }
-
-            print("In range of " + this.cover_type);
         }
         
     }

@@ -24550,8 +24550,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   balance: 0
-  cam_lvl: 0
-  stealth_lvl: 0
+  cam_lvl: 1
+  stealth_lvl: 1
 --- !u!4 &1816246685 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 5055698509961064898, guid: 6d6991dbbdeecb1488bbf78c063d1235,
