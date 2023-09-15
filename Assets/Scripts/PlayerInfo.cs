@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerInfo : MonoBehaviour
+public class playerInfo : MonoBehaviour
 {
     public int balance;
     public int cam_lvl;
